@@ -126,6 +126,18 @@ input[type='checkbox'] {
 	cursor: pointer;
 }
 
+.download-btn {
+	width: 10%;
+	float: right;
+	margin-bottom: 0.3rem;
+	display: none;
+}
+
+.download-btn:hover {
+	background-color: #ccc;
+	color: #fff;
+}
+
 .tables {
 	margin: 10px 0;
 	width: 90%;
