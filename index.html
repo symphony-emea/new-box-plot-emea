@@ -1,87 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>Box Graph</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='https://cdn.plot.ly/plotly-2.26.0.min.js'></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Box Graph</title>
-</head>
-
-<body>
-    <div class="heading">
-        <h1>EMEA BOX PLOT</h1>
-        <img src="logo.png" alt="Google" width="50">
-    </div>
-    <div class="container">
-        <div class="wrapper weeks">
-            <button class="week-btn btn">Week No.</button>
-            <div class="checkboxes" id="Categories">
-                <div class="inner-wrap"></div>
-            </div>
-        </div>
-        <div class="wrapper price-seg">
-            <button class="price-seg-btn btn">Price Segments</button>
-            <div class="checkboxes" id="Categories">
-                <div class="inner-wrap"></div>
-            </div>
-        </div>
-        <div class="wrapper vendor">
-            <button class="vendor-btn btn">Vendor</button>
-            <div class="checkboxes" id="Categories">
-                <div class="inner-wrap"></div>
-            </div>
-        </div>
-        <div class="wrapper tariff-seg">
-            <button class="tariff-seg-btn btn">Tariff Segments</button>
-            <div class="checkboxes" id="Categories">
-                <div class="inner-wrap"></div>
-            </div>
-        </div>
-        <div class="wrapper tariff-type">
-            <button class="tariff-type-btn btn">Tariff Type</button>
-            <div class="checkboxes" id="Categories">
-                <div class="inner-wrap"></div>
-            </div>
-        </div>
-        <div class="wrapper tco">
-            <button class="tco-btn btn">TCO</button>
-            <div class="checkboxes" id="Categories">
-                <div class="inner-wrap">
-                    <div class="inner-wrap">
-                        <label for="tco Select All">
-                            <input type="checkbox" id="tco Select All" value="Select All" class="ckkBox all" disabled>
-                            <span>Select All</span><br></label>
-                        <label for="Calculated TCO">
-                            <input type="checkbox" id="Calculated TCO" value="Calculated TCO" class="ckkBox val">
-                            <span>Calculated TCO</span>
-                        </label>
-                        <label for="Calculated TCO TI">
-                            <input type="checkbox" id="Calculated TCO TI" value="Calculated TCO TI" class="ckkBox val">
-                            <span>Calculated TCO TI</span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="wrapper year">
-            <button class="year-btn btn">Year</button>
-            <div class="checkboxes" id="Categories">
-                <div class="inner-wrap"></div>
-            </div>
-        </div>
-        <button class="submit-btn btn">Submit</button>
-    </div>
-    <div class="container-chart">
-    </div>
-    <div class="tables">
-        <div class="download">
-            <button class="download-btn btn">Download</button>
-        </div>
-        <table class="table"></table>
-    </div>
-    <script src="script_new.js"></script>
-</body>
-
+	<body>
+		<div class="heading">
+			<h1>EMEA BOX PLOT</h1>
+			<img src="logo.png" alt="Google" width="50" />
+		</div>
+		<div class="container">
+			<div class="wrapper weeks">
+				<button class="week-btn btn">Week No.</button>
+				<div class="checkboxes" id="Categories">
+					<div class="inner-wrap"></div>
+				</div>
+			</div>
+			<div class="wrapper price-seg">
+				<button class="price-seg-btn btn">Price Segments</button>
+				<div class="checkboxes" id="Categories">
+					<div class="inner-wrap"></div>
+				</div>
+			</div>
+			<div class="wrapper vendor">
+				<button class="vendor-btn btn">Vendor</button>
+				<div class="checkboxes" id="Categories">
+					<div class="inner-wrap"></div>
+				</div>
+			</div>
+			<div class="wrapper tariff-seg">
+				<button class="tariff-seg-btn btn">Tariff Segments</button>
+				<div class="checkboxes" id="Categories">
+					<div class="inner-wrap"></div>
+				</div>
+			</div>
+			<div class="wrapper tariff-type">
+				<button class="tariff-type-btn btn">Tariff Type</button>
+				<div class="checkboxes" id="Categories">
+					<div class="inner-wrap"></div>
+				</div>
+			</div>
+			<div class="wrapper year">
+				<button class="year-btn btn">Year</button>
+				<div class="checkboxes" id="Categories">
+					<div class="inner-wrap"></div>
+				</div>
+			</div>
+			<button class="submit-btn btn">Submit</button>
+			<button class="reset-btn btn">Reset</button>
+		</div>
+		<div class="container-chart"></div>
+		<div class="tables">
+			<div class="download">
+				<button class="download-btn btn">Download</button>
+			</div>
+			<table class="table"></table>
+		</div>
+		<script src="scriptNewData.js"></script>
+	</body>
 </html>

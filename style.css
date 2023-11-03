@@ -126,9 +126,18 @@ input[type='checkbox'] {
 	cursor: pointer;
 }
 
+.submit-btn {
+	background: #4285f4;
+	color: white;
+}
+.reset-btn {
+	background: #f44336;
+	color: white;
+}
 .download-btn {
 	width: 10%;
 	float: right;
+	/* position: fixed; */
 	margin-bottom: 0.3rem;
 	display: none;
 }
